@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>RC Eventos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="entrada.html">
+      <img src="assets/logo.jpeg" alt="Logo RC Eventos">
+      </a>
+    </div>
+
+    <div class="title">
+      <h1>RC Eventos</h1>
+    </div>
+
+    <!-- Espaço vazio invisível para centralizar o título -->
+    <div class="logo fake-logo">
+      <img src="assets/logo.jpeg" alt="Logo RC Eventos" style="visibility: hidden;">
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="entrada.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="index.html"><i class="fas fa-music"></i> Bandas</a></li>
+      <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="visually-hidden">Veja alguns dos nossos artistas parceiros</h1>
+
+<section class="carousel" id="carousel1">
+  <div class="carousel-container">
+    <!-- Slide 1 -->
+    <div class="carousel-slide active">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Bondbaile</h1>
+          <p>Organizamos casamentos, aniversários e eventos corporativos com excelência.</p>
+        </div>
+        <img src="assets/bondbaile.png" alt="Imagem evento">
+      </div>
+    </div>
+
+    <!-- Slide 2 (invertido) -->
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Bondbaile</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/bondbaile_video1.mp4" controls></video>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Evento Especial</h1>
+          <p>Mais um sucesso organizado pela RC Eventos.</p>
+        </div>
+        <video src="assets/bondbaile_video2.mp4" controls="Video"></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Bondbaile</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/bondbaile_video3.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Evento Especial</h1>
+          <p>Mais um sucesso organizado pela RC Eventos.</p>
+        </div>
+        <video src="assets/bondbaile_video4.mp4" alt="Imagem evento"></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Bondbaile</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/bondbaile_video5.mp4" controls></video>
+      </div>
+    </div>
+
+  <button class="prev" onclick="changeSlide('carousel1', -1)">&#10094;</button>
+  <button class="next" onclick="changeSlide('carousel1', 1)">&#10095;</button>
+</section>
+
+<section class="carousel" id="carousel2">
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <div class="slide-content">
+        <div class="desc"><h1>Banda Conexão Sonora</h1></div>
+        <img src="assets/Banda_Conexão_Sonora.jpeg" alt="Imagem evento 2">
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Banda Conexão Sonora</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/Banda_Conexão_Sonora1.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Evento Especial</h1>
+          <p>Mais um sucesso organizado pela RC Eventos.</p>
+        </div>
+        <video src="assets/Banda_Conexão_Sonora2.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <video src="assets/Banda_Conexão_Sonora3.mp4" controls></video>
+        <div class="desc">
+          <h1>Banda Conexão Sonora</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botões de navegação -->
+  <button class="prev" onclick="changeSlide('carousel2', -1)">&#10094;</button>
+  <button class="next" onclick="changeSlide('carousel2', 1)">&#10095;</button>
+</section>
+
+<section class="carousel" id="carousel3">
+  <div class="carousel-container">
+    <!-- Slide 1 -->
+    <div class="carousel-slide active">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Banda Reprise</h1>
+          <p>Organizamos casamentos, aniversários e eventos corporativos com excelência.</p>
+        </div>
+        <img src="assets/Banda_Reprise.jpg" alt="Imagem evento">
+      </div>
+    </div>
+
+    <!-- Slide 2 (invertido) -->
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Banda Reprise</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/Banda_Reprise1.mp4" controls></video>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Evento Especial</h1>
+          <p>Mais um sucesso organizado pela RC Eventos.</p>
+        </div>
+        <video src="assets/Banda_Reprise2.mp4" controls="Video"></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Banda Reprise</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/Banda_Reprise3.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Evento Especial</h1>
+          <p>Mais um sucesso organizado pela RC Eventos.</p>
+        </div>
+        <video src="assets/Banda_Reprise4.mp4" alt="Imagem evento"></video>
+      </div>
+    </div>
+
+    <div class="carousel-slide reverse">
+      <div class="slide-content">
+        <div class="desc">
+          <h1>Banda Reprise</h1>
+          <p>Assista um trecho dos nossos shows ao vivo.</p>
+        </div>
+        <video src="assets/Banda_Reprise5.mp4" controls></video>
+      </div>
+    </div>
+
+  <button class="prev" onclick="changeSlide('carousel3', -1)">&#10094;</button>
+  <button class="next" onclick="changeSlide('carousel3', 1)">&#10095;</button>
+</section>
+  <section class="sobre">
+    <h2>Sobre a RC Eventos</h2>
+    <p>Somos uma empresa especializada na organização de eventos sociais e corporativos, com foco em qualidade, inovação e atendimento personalizado.</p>
+  </section>
+
+  <section class="mvv">
+    <div><strong>Missão:</strong> Transformar sonhos em eventos inesquecíveis com excelência e profissionalismo.</div>
+    <div><strong>Visão:</strong> Ser referência em eventos no Brasil, reconhecida pela criatividade e confiança.</div>
+    <div><strong>Valores:</strong> Compromisso, ética, inovação, pontualidade e respeito ao cliente.</div>
+  </section>
+
+  <div class="cta">
+    <a href="contato.html" class="btn">Agende seu Evento</a>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://wa.me/5517988425929?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/rickdecarvalhooficial" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/18M95G7vkR/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.google.com/maps?q=Bebedouro+SP+NPMidia" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
